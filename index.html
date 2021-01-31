@@ -1,0 +1,293 @@
+<!-- Acknowledging people about Norman Borlaug.
+About him , Achievements , Contribution  , early life
+to do - 
+1) make a navigation bar
+2) navigation should contain 4 options
+3) 5 sections need to be created
+4) each section will be of following attributes-
+    a. height and width should match the viewport
+    b. it should be responsive and doesnot break on mobile devices
+5) the design should be minimalistic and color scheme would be triadic -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Dancing+Script:wght@700&family=Hachi+Maru+Pop&display=swap");
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      .page {
+        min-height: 100vh;
+        padding-top: 100px;
+        padding-bottom: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
+        display: flex;
+        flex-direction: row;
+        background-color: #db9824;
+      }
+      #home {
+        background-color: #db9824;
+        background-image: url("hero image.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
+      #early_life {
+        background-color: #6dc4ff;
+      }
+      #about_him {
+        background-color: #7fd31f;
+        background-image: url("about\ him.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
+      #contribution {
+        background-color: #254edb;
+        background-image: url("contribution.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: right;
+        text-align: justify;
+      }
+      #achievements {
+        background-color: #ff8665;
+        background-image: url("nobel\ prize.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
+      ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+      }
+      .nav {
+        position: fixed;
+        width: 100%;
+        height: auto;
+        background-color: rgba(255, 255, 255, 0.5);
+        font-size: 20px;
+      }
+      a {
+        color: black;
+        text-decoration: none;
+      }
+      li:hover {
+        background-color: rgba(255, 255, 255, 0.8);
+      }
+      li {
+        background-color: rgba(255, 255, 255, 0);
+      }
+      h1 {
+        font-family: "Abril Fatface", cursive;
+        font-size: 120px;
+      }
+      b {
+        font-family: "Dancing Script", cursive;
+        font-size: 40px;
+        color: white;
+      }
+
+      p {
+        font-family: "Hachi Maru Pop", cursive;
+        color: white;
+      }
+      .nav-link {
+        font-family: "Dancing Script", cursive;
+      }
+      .image {
+        border-radius: 15px;
+        display: flex;
+        flex: 1;
+        max-width: 50vw;
+      }
+      .page-portion {
+        flex: 1;
+      }
+      #herotext {
+        flex: 0.6;
+        align-self: flex-end;
+        justify-self: center;
+        text-align: right;
+      }
+      #early_life {
+        background-color: #035f8f;
+        background-image: url("early life.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: right;
+        text-align: justify;
+      }
+      .footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;  
+        background-color:#D8FDF4;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav">
+      <ul>
+        <li><a class="nav-link" href="#home">Home</a></li>
+        <li><a class="nav-link" href="#early_life">Early life</a></li>
+        <li><a class="nav-link" href="#about_him">About him</a></li>
+        <li><a class="nav-link" href="#contribution">Contribution</a></li>
+        <li><a class="nav-link" href="#achievements">Achievements</a></li>
+      </ul>
+    </div>
+    <div class="content">
+      <div class="page" id="home">
+        <div class="page-portion">
+          <!-- <center><img src="hero image.jpg"  class="image"></center> -->
+        </div>
+        <div class="page-portion" id="herotext">
+          <h1>Norman Borlaug</h1>
+          <b>Father of the Green Revolution</b>
+          <p id="subheading">
+            In this website we are trying to acknowledge ourselves about this
+            great man who has saved billion lives.
+          </p>
+        </div>
+      </div>
+      <div class="page" id="early_life">
+        <div class="page-portion">
+          <b>Early life of Norman Borlaug</b>
+          <p>
+            Norman Borlaug born in 25 March 1914. Norman Ernest Borlaug was born
+            in Saude, Iowa, on the farm of his grandfather, Nels Olson Borlaug,
+            who was the son of Norwegian immigrants. From the age of seven,
+            young Norman worked on the family farm, where he learned the basics
+            of agriculture, and enjoyed an active outdoor life. From age seven
+            to nineteen, he worked on the 106-acre family farm west of Protivin,
+            Iowa, fishing, hunting, and raising corn, oats, timothy-grass,
+            cattle, pigs and chickens. He attended the one-teacher, one-room New
+            Oregon rural school in Howard County, through eighth grade. Today,
+            the Norman Borlaug Heritage Foundation as part of “Project Borlaug
+            Legacy” owns the school building, built in 1865. Borlaug was a
+            member of the football, baseball and wrestling teams at Cresco High
+            School, where his wrestling coach, Dave Barthelma, continually
+            encouraged him to "give 105%". Borlaug attributed his decision to
+            leave the farm and pursue further education to his grandfather's
+            urgent encouragement to learn: Nels Olson Borlaug (1859–1935) once
+            told him, "you're wiser to fill your head now if you want to fill
+            your belly later on." When Borlaug applied for admission to the
+            University of Minnesota in 1933, he failed its entrance exam, but
+            was accepted at the school's newly created two-year General College.
+            After two quarters, he transferred to the College of Agriculture's
+            forestry program. As a member of University of Minnesota's varsity
+            wrestling team, Borlaug reached the Big Ten semifinals, and promoted
+            the sport to Minnesota high schools in exhibition matches all around
+            the state.
+          </p>
+        </div>
+        <div class="page-portion">
+          <!-- <img src="C:\Users\USER\Desktop\download.jpg"  class="image"> -->
+        </div>
+      </div>
+      <div class="page" id="about_him">
+        <div class="page-portion"></div>
+        <div class="page-portion" id="about-him-text">
+          <b>About Norman Borlaug</b>
+          <p>
+            Norman Borlaug was the father of green revolution . He was an
+            agronomist who led initiatives worldwide that contributed to the
+            extensive increases in agricultural production termed the Green
+            Revolution. n 1970 Norman E. Borlaug was awarded the Nobel Peace
+            Prize for a lifetime of work to feed a hungry world. Although a
+            scientist with outstanding contributions, perhaps Dr. Borlaug's
+            greatest achievement has been his unending struggle to integrate the
+            various streams of agricultural research into viable technologies
+            and to convince political leaders to bring these advances to
+            fruition.Dr. Borlaug's skills as an athlete (mainly in wrestling)
+            opened the door for him to attend the University of Minnesota, where
+            he studied to be a forester, wrestled, and worked various odd jobs.
+            After graduating in 1937 with a BS in Forestry, he went to work for
+            the United States Forest Service, initially in Idaho and later in
+            Massachusetts and Connecticut. He returned to graduate school at the
+            University of Minnesota, and took up the study of plant pathology,
+            receiving his Ph.D. in 1942. Years later, the University of
+            Minnesota would house its plant pathology and agronomy programs in
+            Borlaug Hall. After graduation, Dr. Borlaug worked as a
+            Microbiologist for E.I. Dupont de Nemours, until being released from
+            his wartime service. In 1944, Dr. Borlaug participated in the
+            Rockefeller Foundation's pioneering technical assistance program in
+            Mexico, where he was a research scientist in charge of wheat
+            improvement. For the next sixteen years, he worked to solve a series
+            of wheat production problems that were limiting wheat cultivation in
+            Mexico and to help train a whole generation of young Mexican
+            scientists. The work in Mexico not only had a profound impact on Dr.
+            Borlaug's life and philosophy of agriculture research and
+            development, but also on agricultural production, first in Mexico
+            and later in many parts of the world. It was on the research
+            stations and farmers' fields of Mexico that Dr. Borlaug developed
+            successive generations of wheat varieties with broad and stable
+            disease resistance, broad adaptation to growing conditions across
+            many degrees of latitude, and with exceedingly high yield potential.
+            These new wheat varieties and improved crop management practices
+            transformed agricultural production in Mexico during the 1940's and
+            1950's and later in Asia and Latin America, sparking what today is
+            known as the "Green Revolution." Because of his achievements to
+            prevent hunger, famine and misery around the world, it is said that
+            Dr. Borlaug has "saved more lives than any other person who has ever
+            lived."
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="page" id="contribution">
+      <div class="page-portion">
+        <div id="contribution-text">
+          <b>Contribution towards green revolution</b>
+          <p>
+            During the mid-20th century, Borlaug led the introduction of these
+            high-yielding varieties combined with modern agricultural production
+            techniques to Mexico, Pakistan, and India. Borlaug was often called
+            "the father of the Green Revolution", and is credited with saving
+            over a billion people worldwide from starvation. In 1961 to 1962,
+            Borlaug's dwarf spring wheat strains were sent for multi location
+            testing in the International Wheat Rust Nursery, organized by the
+            U.S. Department of Agriculture. Due to him production has increased
+            in India (see the graph). He is a god for the human beings who did
+            not get their daily food.
+          </p>
+        </div>
+      </div>
+      <div class="page-portion">
+        <img src="C:\Users\USER\Desktop\g image.jpg " class="image" />
+      </div>
+    </div>
+    <div class="page" id="achievements">
+      <div class="page-portion"></div>
+      <div class="page-portion" style="padding-left: 80px;" >
+        <b>Popular achievements</b>
+        <p>
+          He was awarded with padma vibhusan in 2006 ,<br />
+          nobel peace prize in 1970 , public welfare medal in 2002 and many
+          other awards
+        </p>
+      </div>
+      <!-- <img src="C:\Users\USER\Desktop\gr.jpg" class="image">
+          <img src="C:\Users\USER\Desktop\nobel prize.jpg"  class="image">
+          <img src="C:\Users\USER\Desktop\image.jpg"  class="image">
+</div> -->
+    </div>
+   <div class="footer">
+    Information Courtesy:  <u><a href="https://en.wikipedia.org/wiki/Norman_Borlaug">Wikipedia
+      </a
+    ></u>
+   </div>
+  </body>
+</html>
